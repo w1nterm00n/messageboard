@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Messageboard</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    
+    <h1>Messageboard</h1>
+    <h4>post your comment</h4>
+
+    <div class="messagesContainer">
+
+    <% messages.forEach(function(message) { %>
+        <%- include( 'message', {message: message} ) %>
+    <% }) %>
+    </div>
+
+    <div class="addMsgWrapper">
+        <button class="addMessage">
+            <a href="/new">Add message</a>
+        </button>
+    </div>
+
+  </body>
+</html>

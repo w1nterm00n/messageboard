@@ -1,0 +1,15 @@
+<div class="messageWrapper">
+
+    <div class="decoration"></div>
+
+    <div class="messageContent">
+        <div class="userAndDate">
+            <span class="user"> <%= message.user %> </span>
+            <span class="date"> <%= message.added.toLocaleString() %> </span>
+        </div>
+        <span class="text"><%= message.text %> </span>
+        <button class="openBtn">
+            <a href="/open">Open</a>
+        </button>
+    </div>
+</div>
