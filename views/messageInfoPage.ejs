@@ -5,17 +5,19 @@
   </head>
   <body>
 
-    <div class="messageWrapper">
-      <div class="decoration"></div>
-      <div class="messageContent">
-          <div class="userAndDate">
-              <span class="user"> <%= message.user %> </span>
-              <span class="date"> <%= message.added.toLocaleString() %> </span>
-          </div>
-          <span class="text"><%= message.text %> </span>
-          <button class="goBack">
-              <a href="/">Go back</a>
-          </button>
+    <div class="openMessage">
+      <div class="messageWrapper">
+        <div class="decoration"></div>
+        <div class="messageContent">
+            <div class="userAndDate">
+                <span class="user"> <%= message.user %> </span>
+                <span class="date"> <%= message.added.toLocaleString() %> </span>
+            </div>
+            <span class="text"><%= message.text %> </span>
+            <button class="goBack">
+                <a href="/">Go back</a>
+            </button>
+        </div>
       </div>
     </div>
 

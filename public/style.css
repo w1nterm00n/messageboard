@@ -79,3 +79,8 @@ form{
 .submitBtn{
     margin-top: 20px;
 }
+
+.openMessage{
+    width: fit-content;
+    margin: 40px auto 0 auto;
+}
