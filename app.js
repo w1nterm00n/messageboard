@@ -15,5 +15,9 @@ app.use("/", indexRouter);
 app.use("/new", newMessageRouter);
 app.use("/open", messageInfoRouter);
 
-const PORT = 3005;
+const PORT = 8000;
 app.listen(PORT, () => console.log(`listening on port ${PORT}!`));
+
+app.get("/health", (req, res) => {
+	res.status(200).send("OK");
+});
